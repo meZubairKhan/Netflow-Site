@@ -1,0 +1,125 @@
+:root {
+    --color-1: black;
+    --text-color: white;
+    --accent-color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12pt;
+    /* font-family: ; */
+}
+
+nav {
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+nav .home-link {
+    /* margin-right: auto; */
+}
+
+nav svg {
+    fill: var(--text-color);
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    padding: 0px 200px;
+    display: none;
+}
+
+i {
+    font-size: 35px;
+    color: white;
+}
+
+@media (max-width: 450px) {
+    .links-container {
+        display: none;
+        flex-direction: column;
+        align-items: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+
+        background-color: var(--color-1);
+        box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        /* border: 3px solid red; */
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        display: flex;
+    }
+
+    .bootstrap-cross-icon {
+        /* border: 3px solid red; */
+        position: absolute;
+        right: 0;
+        padding: 20px 20px 20px 80%;
+    }
+
+    .open-sidebar-button {
+        border: 3px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .bootstrap-hamburger-icon {
+        border: 3px solid red;
+        position: reletive;
+        right: 0;
+    }
+
+    .nav-bar-links {
+        /* border: 3px solid blue; */
+        margin-top: 70px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    /* background-color: red; */
+    height: 70px;
+}
+
+h1 {
+    /* color: white; */
+    border: 5px solid red;
+}
+
+p {
+    border: 3px solid blue;
+    padding: top;
+}

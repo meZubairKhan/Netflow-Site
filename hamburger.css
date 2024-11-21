@@ -1,0 +1,101 @@
+header {
+    .nav-bar {
+        #burger {
+            display: none;
+        }
+    }
+
+    .is-close,
+    .is-open {
+        padding: 10px;
+        display: none;
+        color: var(--clr-primary-1);
+    }
+}
+
+label {
+    /* border: 3px solid red; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    i {
+        /* border: 3px solid blue; */
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    header {
+
+        .is-close,
+        .is-open {
+            display: inline;
+
+        }
+
+        .nav-bar {
+            .navbar-2 {
+
+                position: relative;
+
+                .logo {
+                    /* border: 3px solid red; */
+                    width: 100vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .is-close {
+                    position: absolute;
+                    left: 20px;
+                    top: 23px;
+                }
+
+                #burger {
+                    /* border: 3px solid greenyellow; */
+                    visibility: hidden;
+                }
+
+                .navbar-menu {
+                    background-color: var(--clr-secondary-1);
+                    position: fixed;
+                    top: 0px;
+                    left: 0;
+                    display: none;
+                    width: 100vw;
+                    height: 100vh;
+                    padding: 50px 0px 0px 0px;
+                    margin: 0;
+
+                    a {
+                        color: var(--clr-white-1);
+                    }
+
+                    .is-open {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                }
+
+                #burger:checked~.navbar-menu {
+                    display: block;
+
+                    .is-close {
+                        display: none;
+                    }
+                }
+
+                #burger:checked~.is-close {
+                    display: none;
+                    /* border: 3px solid red; */
+
+                }
+            }
+        }
+    }
+}

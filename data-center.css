@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+.page-header {
+    background-color: var(--clr-white-1);
+}
+
+.logo-data-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-netflow {
+    background-color: var(--clr-white-1);
+}
+
+.image-text-section {
+    /* border: 3px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+    .image-section {
+        /* border: 3px solid blue; */
+        width: 500px;
+    }
+    
+    .text-section {
+        /* border: 3px solid red; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+
+        h2 {
+            /* border: 3px solid red; */
+            text-align: left;
+        }
+    }
+    
+    img {
+        border: 3px solid var(--clr-primary-1);
+        border-radius: 15px;
+        border-right: 7px solid var(--clr-primary-1);
+        border-bottom: 7px solid var(--clr-primary-1);
+        width: 100%;
+        height: auto;
+    }
+}
+
+.info-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    .info-block {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    
+        .number-section {
+            border-right: 2px solid var(--clr-secondary-1);
+            width: 200px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 25px;
+    
+            h3 {
+                color: var(--clr-secondary-1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 56px;
+                width: 70px;
+                height: 70px;
+                /* border: 3px solid red; */
+            }
+        }
+    
+        .text-section {
+            padding: 5px 20px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .image-text-section {
+        flex-direction: column;
+
+        .image-section {
+            max-width: 600px;
+            min-width: 250px;
+        }
+
+        .text-section {
+            /* border: 3px solid red; */
+            width: 100%;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .info-block {
+        background-color: white;
+
+    }
+}
+
+@media (max-width: 688px) {
+    .info-blocks {
+        .info-block {
+            /* border: 3px solid red; */
+        background-color: white;
+        flex-direction: column;
+
+            .number-section {
+                border-right: none;
+                border-bottom: 4px solid var(--clr-secondary-1);
+                padding: 20px 20px;
+            }
+
+            .text-section {
+                h3 {
+                    font-size: 33px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .image-text-section {
+
+        .image-section {
+            width: 250px;
+        }
+    }
+
+    .info-blocks {
+
+        .info-block {
+            
+            .text-section {
+
+                h3 {
+                    /* border: 3px solid salmon; */
+                    text-align: left;
+
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .info-blocks {
+
+        .info-block {
+            
+            .text-section {
+
+                h3 {
+                    /* border: 3px solid salmon; */
+                    font-size: 28px;
+                    text-align: left;
+
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .info-blocks {
+
+        .info-block {
+            
+            .text-section {
+
+                h3 {
+                    /* border: 3px solid salmon; */
+                    font-size: 23px;
+                    text-align: left;
+
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
