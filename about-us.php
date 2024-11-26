@@ -90,16 +90,16 @@
                     </div>
 
                     <!-- Muhammad Zubair Khan -->
-                    <div class="team-members">
+                    <!-- <div class="team-members"> -->
                         <!-- <div class="member-image">
                             <img src="/Images/team-member.png" alt="">
                         </div> -->
                         
-                        <div class="member-info">
+                        <!-- <div class="member-info">
                             <h3>Zubair Khan</h3>
                             <p class="paragraph2">Technical Support Engineer</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             

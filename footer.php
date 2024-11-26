@@ -2,6 +2,7 @@
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/index.css">
 
+
 <footer>
         <div class="container">
             <div class="footer side-padding">
