@@ -61,9 +61,9 @@
                         <h4>
                             Get in Touch
                         </h4>
-                        <!-- <a href="https://maps.app.goo.gl/2qmbLzLuRYc4yuVR6" target="_blank"><i
+                        <a href="https://maps.app.goo.gl/2qmbLzLuRYc4yuVR6" target="_blank"><i
                                 class="bi bi-geo-alt-fill" style="color: #f57a0b;"></i> <span class="span">Office no.1,
-                                2nd Floor Al Hafeez Plaza, 18 KM Ferozpur Road, Lahore</span></a> -->
+                                2nd Floor Al Hafeez Plaza, 18 KM Ferozpur Road, Lahore</span></a>
 
                         <a href="mailto:info@netflow.com.pk" target="_blank"><i class="bi bi-envelope-at-fill"
                                 style="color: #f57a0b;"></i> <span class="span">contact@netflow.com.pk</span></a>
